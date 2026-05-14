@@ -20508,7 +20508,7 @@ function AppContent() {
             transcription: {
               model: "gpt-4o-mini-transcribe",
               language: "zh",
-              prompt: WEIDER_TRANSCRIPTION_PROMPT,
+              //prompt: WEIDER_TRANSCRIPTION_PROMPT,
             },
             turn_detection: turnDetection,
           },
