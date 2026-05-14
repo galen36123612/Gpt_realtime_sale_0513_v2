@@ -209,7 +209,6 @@ export async function GET() {
               transcription: {
                 model: "gpt-4o-mini-transcribe",
                 language: "zh",
-                prompt: WEIDER_TRANSCRIPTION_PROMPT.trim(),
               },
               turn_detection: {
                 type: "server_vad",
