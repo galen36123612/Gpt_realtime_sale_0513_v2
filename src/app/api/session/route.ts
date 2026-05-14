@@ -152,15 +152,6 @@ import { randomUUID } from "crypto";
 
 export const runtime = "nodejs";
 
-const WEIDER_TRANSCRIPTION_PROMPT = `
-以下語音主要是繁體中文或普通話，可能夾雜少量英文品牌、通路或價格資訊。
-主題是威德益生菌導購、腸胃保養、好菌、益生菌、排便、口感、水蜜桃口味、粗顆粒、不用配水、長輩、小朋友、素食、抗生素、控糖、糖分、HKD 229、一盒 30 包、香港、Wellcome 惠康、AEON、松本清、Health Store、HKTVmall。
-
-請優先辨識成繁體中文。
-不要把背景雜音、呼吸聲、喇叭回音或不完整尾音轉成英文句子。
-若聽不清楚，請輸出 [inaudible]。
-常見詞彙包含：威德、益生菌、好菌、腸胃、抗生素、控糖、長輩、小朋友、膠囊、口感、水蜜桃、HKTVmall、Health Store、惠康、松本清。
-`;
 
 export async function GET() {
   try {
